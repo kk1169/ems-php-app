@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    hello word
+    Employee Home Page
 </body>
 
 </html>
