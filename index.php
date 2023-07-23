@@ -1,3 +1,7 @@
+<?php
+include "./config/config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,17 +47,7 @@
                             <th scope="col">ACTION</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>
-                                <button class="btn btn-sm btn-success me-2">Edit</button>
-                                <button class="btn btn-sm btn-danger">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
+                    <tbody id="manage_employee" </tbody></tbody>
                 </table>
             </div>
         </div>
