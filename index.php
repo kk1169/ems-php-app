@@ -54,7 +54,9 @@ include "./config/config.php";
         </div>
     </div>
 
-
+    <script>
+        var HOST_URL = "http://<?= $_SERVER['HTTP_HOST'] ?><?= $_SERVER['REQUEST_URI'] ?>";
+    </script>
     <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/plugins/jquery/jquery.min.js"></script>
     <script src="./assets/js/employee.js?v=<?= time() ?>"></script>
