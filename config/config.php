@@ -1,9 +1,9 @@
 <?php
 
-$hostname = 'codeminz.com'; // Replace with your database hostname
-$username = 'u908018477_root'; // Replace with your database username
-$password = '*Us8N&>jb@m'; // Replace with your database password
-$dbname = 'u908018477_ems_ajax_php';   // Replace with your database name
+$hostname = 'localhost'; // Replace with your database hostname
+$username = 'root'; // Replace with your database username
+$password = ''; // Replace with your database password
+$dbname = 'ems_php_app';   // Replace with your database name
 
 // Create a MySQLi instance
 $mysqli = new mysqli($hostname, $username, $password, $dbname);

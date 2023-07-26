@@ -23,16 +23,17 @@ include "./config/config.php";
             </div>
             <div class="card-body">
 
-                <form action="">
+                <form id="employeeForm">
+                    <input type="hidden" name="id" id="employee_id" />
                     <div class="row g-3">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name">
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="col">
-                            <button class="btn btn-success">Submit</button>
+                            <button type="submit" class="btn btn-success">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -56,7 +57,7 @@ include "./config/config.php";
 
     <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/plugins/jquery/jquery.min.js"></script>
-    <script src="./assets/js/employee.js"></script>
+    <script src="./assets/js/employee.js?v=<?= time() ?>"></script>
 </body>
 
 </html>
