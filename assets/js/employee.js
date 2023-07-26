@@ -46,7 +46,7 @@ $(document).ready(function () {
 // Create Employee (C)
 function create_employee(data) {
   $.ajax({
-    url: "http://localhost/ems-php-app/app/employee/manage_employee.php?action=create",
+    url: HOST_URL + "app/employee/manage_employee.php?action=create",
     method: "POST",
     data: data,
     success: function (response) {
@@ -67,7 +67,7 @@ function create_employee(data) {
 // Update Employee (C)
 function update_employee(data) {
   $.ajax({
-    url: "http://localhost/ems-php-app/app/employee/manage_employee.php?action=update",
+    url: HOST_URL + "app/employee/manage_employee.php?action=update",
     method: "POST",
     data: data,
     success: function (response) {
@@ -87,9 +87,7 @@ function update_employee(data) {
 // Delete Employee
 function delete_employee(id) {
   $.ajax({
-    url:
-      "http://localhost/ems-php-app/app/employee/manage_employee.php?action=delete&id=" +
-      id,
+    url: HOST_URL + "app/employee/manage_employee.php?action=delete&id=" + id,
     method: "GET",
     success: function (response) {
       response = JSON.parse(response);
@@ -103,9 +101,7 @@ function delete_employee(id) {
 
 function get_employee(id) {
   $.ajax({
-    url:
-      "http://localhost/ems-php-app/app/employee/manage_employee.php?action=get&id=" +
-      id,
+    url: HOST_URL + "app/employee/manage_employee.php?action=get&id=" + id,
     method: "GET",
     success: function (response) {
       response = JSON.parse(response);
@@ -121,7 +117,7 @@ function get_employee(id) {
 // Fetch Employee (R)
 function fetch_employee() {
   $.ajax({
-    url: "http://localhost/ems-php-app/app/employee/manage_employee.php?action=read",
+    url: HOST_URL + "app/employee/manage_employee.php?action=read",
     method: "GET",
     success: function (response) {
       response = JSON.parse(response);
